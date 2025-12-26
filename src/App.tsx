@@ -110,20 +110,6 @@ function App() {
 
       {/* Hero Section - Diagonal Split */}
       <section id="home" className="relative h-screen overflow-hidden">
-        {/* Background Text */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-          <h1 className="font-anton text-[12vw] leading-none text-center select-none">
-            <div className="text-stroke-thick">NOT</div>
-            <div className="text-white">YOUR</div>
-            <div className="text-stroke-thick">TYPICAL</div>
-            <div className="flex items-center justify-center gap-4">
-              <span className="text-stroke-thick">FITN</span>
-              <span className="text-white">E</span>
-              <span className="text-stroke-thick">SS</span>
-            </div>
-          </h1>
-        </div>
-
         {/* Diagonal Split Images */}
         <div className="absolute inset-0 flex">
           <div className="w-1/2 h-full relative diagonal-clip-left">
@@ -140,6 +126,20 @@ function App() {
               className="w-full h-full object-cover grayscale contrast-125"
             />
           </div>
+        </div>
+
+        {/* Foreground Text */}
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+          <h1 className="font-anton text-[11vw] leading-[0.9] text-center select-none px-4" data-testid="hero-title">
+            <div className="text-stroke-thick">NOT</div>
+            <div className="text-white drop-shadow-2xl">YOUR</div>
+            <div className="text-stroke-thick">TYPICAL</div>
+            <div className="flex items-center justify-center gap-2 md:gap-4">
+              <span className="text-stroke-thick">FITN</span>
+              <span className="text-white drop-shadow-2xl">E</span>
+              <span className="text-stroke-thick">SS</span>
+            </div>
+          </h1>
         </div>
 
         {/* Scroll Indicator */}
